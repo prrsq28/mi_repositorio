@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="contenedor">
+        <div id="conductor">
+           <p class="titulo">Datos del Conductor</p>
+            <fieldset id="genero">
+                <legend> Género</legend>
+                <input type="radio" class="genero option" name="genero" value="hombre" id="hombre" checked>
+                <label for="hombre" class="genero">Hombre</label>
+                <input type="radio" class="genero option" name="genero" value="mujer" id="mujer">
+                <label for="mujer" class="genero">Mujer</label>
+            </fieldset>
+            <div class="izquierda">
+                <label for="nombre">⚠️Nombre</label>
+                <input type="text" name="nombre" size="20" required>
+            </div> 
+            <div class="derecha">
+                <label for="apellidos">⚠️Apellidos</label>
+                <input type="text" name="apellidos" size="36" required>
+            </div> 
+            <div class="izquierda">
+                    <label for="direccion">⚠️Dirección</label>
+                    <input type="text" name="direccion" size="36" required>
+            </div>    
+            <div class="centro">
+                <label for="numero">⚠️Número</label>
+                <input type="text" name="numero" size="6" required>
+            </div>
+            <div class="derecha">
+                <label for="piso">⚠️Piso</label>
+                <input type="text" name="piso" size="6" required>
+            </div>
+            <div class="izquierda">
+                <label for="cpostal">⚠️C. Postal</label>
+                <input type="text" name="cpostal" size="6" required>
+            </div>
+            <div class="centro">
+                <label for="localidad">⚠️Localidad</label>
+                <input type="text" name="localidad" size="18" required>
+            </div>
+            <div class="derecha">
+                <label for="provincia">⚠️Provincia</label required>
+                <input type="text" name="provincia" size="18">
+            </div>
+            <div class="izquierda">
+                <label for="telefono">⚠️Teléfono</label>
+                <input type="tel" name="telefono" required>
+            </div>
+            <div class="derecha">
+                <label for="email">⚠️E-mail</label>
+                <input type="email" name="email" size="27" required>
+            </div>
+            <div class="izquierda">
+                <label for="nacionalidad">⚠️Nacionalidad</label>
+                <input type="text" name="nacionalidad" size="20" required>
+            </div>
+            <div class="derecha">
+                <label for="fecha_nacimento">⚠️Fecha de nacimiento</label>
+                <input type="date" name="fecha_nacimiento" required>
+            </div>
+            <fieldset class="izquierda" id="tipo_documento">
+                <legend>⚠️Número de documento</legend>
+                <input type="radio"class="documento" name="documento" value="dni" id="dni" checked>
+                <label for="dni" class="documento">DNI</label><br>
+                <input type="text" class="documento" name="numero_documento" size="20" id="numero_documento" required><br>
+                <input type="radio" class="documento" name="documento" value="nie" id="nie">
+                <label for="nie" class="documento">NIE</label>
+            </fieldset>
+            <div class="izquierda">
+                <label for="fecha_expedicion">⚠️Fecha de expedición permiso de conducir</label>
+                <input type="date" name="fecha_expedicion" required>
+            </div>
+            <div class="derecha">
+                <label for="km">⚠️Kms anuales</label>
+                <input type="text" name="km" size="6" required>
+            </div>
+        </div>
+        <div id="vehiculo">
+            <p class="titulo">Datos del Vehículo</p>
+            <div class="izquierda">
+                <label for="marca">⚠️Marca</label>
+                <input type="text" name="Marca" size="20"  placeholder="Marca?" required>
+            </div> 
+            <div class="derecha">
+                <label for="modelo">⚠️Modelo</label>
+                <input type="text" name="modelo" size="36" required>
+            </div>
+            <div class="izquierda">
+                <label for="combustible">Combustible</label>
+                <select id="combustible">
+                    <option>Galolina</option>
+                    <option>Diesel</option>
+                    <option>Híbrido</option>
+                    <option>Eléctrico</option>
+                </select>
+            </div> 
+            <div class="derecha">
+                <label for="color">Color</label>
+                <input type="color" name="color" size="36" id="color">
+            </div><br>
+            <div class="izquierda">
+                <label for="año">Año de matriculación</label>
+                <select name="año" id="año">
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                </select>
+            </div>
+            <div class="derecha">
+                <label for="año_compra">Año de compra</label>
+                <select name="año_compra" id="año_compra">
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                </select>
+                <label id="anteriores">No se aseguran vehiculos anteriores al 2013</label>
+            </div><br>
+            <div class="textarea">
+                <label for="extras">Extras</label><br>
+                <textarea rows="5"></textarea>
+            </div> 
+            <div class="textarea">
+                <label for="comentarios">Comentarios</label><br>
+                <textarea rows="5"></textarea>
+            </div> 
+        </div>
+        <a href="#conductor"><button>Datos del vehículo </button></a>
+        <a href="#vehiculo"><button>Datos del conductor</button></a>
+        <p>⚠️ Campos obligarorios</p>
+        <div id="checkbox">
+            <input type="checkbox" id="boletin" checked>
+            <label for="bolitin">Deseo suscribirme al boletín mensual</label><br>
+            <input type="checkbox" id="terminos">
+            <label for="terminos">Acepto los términos de uso y privacidad</label><br>
+            
+        </div>
+        <a href="form.html"><input id="enviar" type="button" value="Enviar datos"></a>
+    </div>
+    
+</body>
+</html>
