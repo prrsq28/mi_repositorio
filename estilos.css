@@ -1,0 +1,120 @@
+body{
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-left: 10%;
+}
+#contenedor{
+    width:725px
+    ;
+    background-color: #edf2f2;
+    box-shadow: 5px 5px 10px rgb(226, 225, 225);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+}
+#vehiculo{
+    background-color: rgb(238, 243, 243);
+    width:675px;
+    height: 500px;
+    padding:25px;
+    position: fixed;
+    display: block;
+}
+#conductor{
+    background-color: rgb(238, 243, 243);
+    width:675px;
+    height: 500px;
+    padding:25px;
+    position:absolute;
+    display:block
+}
+#conductor:target{
+    display: none;
+}
+#vehiculo:target{
+    display: none;
+}
+.titulo{
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #808080;
+}
+fieldset{
+    width: 50%;
+    margin: 2% 0;
+    vertical-align: middle;
+}
+input{
+    padding: 5px;
+}
+.option{
+    margin-left: 10%;
+}
+.izquierda{
+    display: inline-block;
+    margin: 1% 1%;
+}
+.centro{
+    display: inline-block;
+    margin: 1% 1%;
+}
+.derecha{
+    display: inline-block;
+    margin: 1% 1%;
+}
+.documento{
+    font-size: 10px;
+    vertical-align: middle;
+}
+#numero_documento{
+    font-size: 14px;
+    margin-left: 60px;
+}
+#color{
+    padding: 0;
+}
+#anteriores{
+    font-size: 10px;
+}
+textarea{
+    width: 400px;
+    margin-left: 40px;
+}
+.textarea{
+    margin-top: 2%;
+}
+button{
+    width: 100px;
+    height: 45px;
+    margin-top: 550px;
+    margin-left: 100px;
+    vertical-align: bottom;
+}
+p{
+    text-align: right;
+    margin-right: 50px;
+}
+#checkbox{
+    padding: 25px;
+}
+#enviar{
+    width: 150px;
+    height: 50px;
+    margin-left: calc(50% - 75px);
+    margin-top: 25px;
+    box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
